@@ -15,7 +15,7 @@
         }
 
         body {
-            height: 100%;
+            height: 100vh;
             background-color: white;
             display: flex;
             justify-content: center;
@@ -25,7 +25,7 @@
         .content {
             text-align: center;
             padding: 15px;
-            height: 100%;
+            height: calc(100vh - 30px);
             overflow-y: auto;
         }
 
@@ -33,43 +33,50 @@
             margin-bottom: 20px;
         }
 
-        .s1 {
-            color: #f6653c;
-            font-size: 28px;
+        .line {
+            color: rgb(26, 24, 24);
+            text-transform: uppercase;
+            text-align: left;
         }
 
-        .s2 {
-            font-size: 28px;
-        }
-
-        .s3 {
-            font-size: 24px;
-        }
-
-        .s4 {
-            font-size: 20px;
+        .line::before {
+            content: '→';
         }
 
         .click {
-            background-color: #f6653c;
-            color: white;
-            font-size: 30px;
-            padding: 10px;
-            display: block;
-            margin: 15px 0px;
+            display: inline-block;
+            line-height: 1;
+            white-space: nowrap;
+            cursor: pointer;
+            background: rgb(228, 255, 240);
+            border: 1px solid #dcdfe6;
+            color: rgb(26, 24, 24);
+            -webkit-appearance: none;
+            text-align: center;
+            box-sizing: border-box;
+            outline: none;
+            margin: 0;
+            transition: .1s;
+            font-weight: 500;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 4px;
         }
     </style>
 </head>
 
 <body>
     <div class="content">
-        <div class="s1">Flavourful Vegan Recipes Covering Everything From Burrito Bowls To Chocolate Mousse</div>
-        <div class="s3">SIMPLE, EASY, AMAZING-TASTY VEGAN RECIPES</div>
-        <div class="s3">CLEAN, MEAL PREP INSTRUCTION ANYONE CALL FOLLOW</div>
-        <div class="s3">COMPLETE GROCERY SHOPPING LIST AND FOOD TABLE</div>
-        <div class="s2">Includes over 100 mouth-watering recipes for Everyone to Enjoy!</div>
-        <div class="s4">You'll Also Get Some Bonus Green Smoothie Recipes From Our Special Recipe Categories</div>
-        <a href="https://51b7bz7dew9x3w7kz22nrz2p93.hop.clickbank.net/" class="click">JUST CLICK</a>
+        <div class="line">Flavourful Vegan Recipes Covering Everything From Burrito Bowls To Chocolate Mousse</div>
+        <div class="line">SIMPLE, EASY, AMAZING-TASTY VEGAN RECIPES</div>
+        <div class="line">CLEAN, MEAL PREP INSTRUCTION ANYONE CALL FOLLOW</div>
+        <div class="line">COMPLETE GROCERY SHOPPING LIST AND FOOD TABLE</div>
+        <div class="line">Includes over 100 mouth-watering recipes for Everyone to Enjoy!</div>
+        <div class="line">You'll Also Get Some Bonus Green Smoothie Recipes From Our Special Recipe Categories</div>
+        <a href="https://51b7bz7dew9x3w7kz22nrz2p93.hop.clickbank.net/" class="click">CLICK HERE TO GET IT </a>
     </div>
 </body>
 
